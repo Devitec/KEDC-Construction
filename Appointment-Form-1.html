@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment-Form</title>
+  <!-- Bootstrap 5.3 css  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet"
+    type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+  <link rel="stylesheet" href="./Appointment-Form-1.css">
+</head>
+
+<body>
+  <!-- Navbar  -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="assets/KEDC.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="About us.html">About us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="Projects - Finished.html">Finished</a></li>
+              <li><a class="dropdown-item" href="Projects - On Going.html">On Going</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="News & Updates.html">News & Updates</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button" 
+            data-bs-toggle="dropdown" aria-expanded="false">
+              Careers
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="Why work with us.html">Why Work With us</a></li>
+              <li><a class="dropdown-item" href="Be One of us.html">Be one of us</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-warning active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contact Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="Contact.html">Work With us</a></li>
+              <li><a class="dropdown-item" href="index.html">Set an Appointment</a></li>
+              <li><a class="dropdown-item" href="FAQ's.html">FAQs</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /End of Navbar  -->
+  <div class="container py-4 px-4">
+    <div class="row head-form">
+      <div class="container  py-2">
+        <main>
+          <section>
+            
+              <div class="form-control px-3 p-3"id="my_form">
+                <div>
+                  <h1 class="text-center">Select Time and Date </h1>
+                </div>
+  
+                <div class="row">
+                  <div class="container">
+  
+  
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Select Date: </label>
+                        <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+                          <span class="input-group-addon"><i class='bx bxs-calendar'></i></span>
+                          <input class="form-control" type="text" readonly id="pickerDateInput"/>
+  
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+  
+  
+                        <label>Select Time:</label>
+                        <div id="timepicker" class="input-group date" data-time-format="12hrs">
+                          <span class="input-group-addon"><i class='bx bx-time-five'></i></span>
+                          <input type="text" class="time-pickable" id="pickerTimeInput" readonly></input>
+  
+                        </div>
+                      </div>
+  
+  
+                    </div>
+                  </div>
+  
+        
+  
+  
+                  <div class="form-button-container py-3">
+                    <a href="Appointment-Form .html"><input type="button" value="Back" class="sbtn1"></a>
+                    <a href="Appointment-form-3.html"><input type="submit" value="Next" class="sbtn1" id="submitSched"></a>
+                  </div>
+                </div>
+              </div>
+            
+            
+      </div>
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  </section>
+  </main>
+  </div>
+
+  <script>
+    // Calendar
+
+    $(function () {
+      $("#datepicker")
+        .datepicker({
+          autoclose: true,
+          todayHighlight: true,
+        })
+        .datepicker("update", new Date());
+    });
+
+    // Time Picker
+    function activate() {
+      document.head.insertAdjacentHTML(
+        "beforeend",
+        `
+		<style>
+			.time-picker {
+				position: absolute;
+				display: inline-block;
+				padding: 10px;
+				background: #eeeeee;
+				border-radius: 6px;
+			}
+			.time-picker__select {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				outline: none;
+				text-align: center;
+				border: 1px solid #dddddd;
+				border-radius: 6px;
+				padding: 6px 10px;
+				background: #ffffff;
+				cursor: pointer;
+				font-family: 'Heebo', sans-serif;
+			}
+		</style>
+	`
+      );
+
+      document.querySelectorAll(".time-pickable").forEach((timePickable) => {
+        let activePicker = null;
+
+        timePickable.addEventListener("focus", () => {
+          if (activePicker) return;
+
+          activePicker = show(timePickable);
+
+          const onClickAway = ({ target }) => {
+            if (
+              target === activePicker ||
+              target === timePickable ||
+              activePicker.contains(target)
+            ) {
+              return;
+            }
+
+            document.removeEventListener("mousedown", onClickAway);
+            document.body.removeChild(activePicker);
+            activePicker = null;
+          };
+
+          document.addEventListener("mousedown", onClickAway);
+        });
+      });
+    }
+
+    function show(timePickable) {
+      const picker = buildPicker(timePickable);
+      const { bottom: top, left } = timePickable.getBoundingClientRect();
+
+
+      //console.log(picker.value)
+      picker.style.top = `${top}px`;
+      picker.style.left = `${left}px`;
+
+      document.body.appendChild(picker);
+
+      return picker;
+    }
+
+    function buildPicker(timePickable) {
+      const picker = document.createElement("div");
+      const hourOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(
+        numberToOption
+      );
+      const minuteOptions = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55].map(
+        numberToOption
+      );
+
+      picker.classList.add("time-picker");
+      picker.innerHTML = `
+		<select class="time-picker__select">
+			${hourOptions.join("")}
+		</select>
+		:
+		<select class="time-picker__select">
+			${minuteOptions.join("")}
+		</select>
+		<select class="time-picker__select">
+			<option value="am">am</option>
+			<option value="pm">pm</option>
+		</select>
+	`;
+
+      const selects = getSelectsFromPicker(picker);
+
+      selects.hour.addEventListener(
+        "change",
+        () => (timePickable.value = getTimeStringFromPicker(picker))
+      );
+      selects.minute.addEventListener(
+        "change",
+        () => (timePickable.value = getTimeStringFromPicker(picker))
+      );
+      selects.meridiem.addEventListener(
+        "change",
+        () => (timePickable.value = getTimeStringFromPicker(picker))
+      );
+
+      if (timePickable.value) {
+        const { hour, minute, meridiem } = getTimePartsFromPickable(timePickable);
+
+        selects.hour.value = hour;
+        selects.minute.value = minute;
+        selects.meridiem.value = meridiem;
+      }
+
+      return picker;
+    }
+
+    function getTimePartsFromPickable(timePickable) {
+      const pattern = /^(\d+):(\d+) (am|pm)$/;
+      const [hour, minute, meridiem] = Array.from(
+        timePickable.value.match(pattern)
+      ).splice(1);
+
+      return {
+        hour,
+        minute,
+        meridiem,
+      };
+    }
+
+    function getSelectsFromPicker(timePicker) {
+      const [hour, minute, meridiem] = timePicker.querySelectorAll(
+        ".time-picker__select"
+      );
+
+      return {
+        hour,
+        minute,
+        meridiem,
+      };
+    }
+
+    function getTimeStringFromPicker(timePicker) {
+      const selects = getSelectsFromPicker(timePicker);
+
+      return `${selects.hour.value}:${selects.minute.value} ${selects.meridiem.value}`;
+    }
+
+    function numberToOption(number) {
+      const padded = number.toString().padStart(2, "0");
+
+      return `<option value="${padded}">${padded}</option>`;
+    }
+
+    activate();
+
+
+
+    // save to local storage 
+    const pickerDateInput = document.getElementById("pickerDateInput")
+    const pickerTimeInput = document.getElementById("pickerTimeInput")
+    const submitSched = document.getElementById("submitSched")
+
+    submitSched.addEventListener("click", (e) => {
+      e.preventDefault()
+      console.log(pickerDateInput.value)
+      console.log(pickerTimeInput.value)
+      const schedule = {
+        time: pickerTimeInput.value,
+        date: pickerDateInput.value
+      }
+      
+      alert("Schedule has been saved!")
+      localStorage.setItem('Time', schedule.time);
+      localStorage.setItem('Date', schedule.date)
+      // localStorage.setItem("schedule", JSON.stringify(schedule))
+      window.location.href = "Appointment-form-2.html"
+    })
+  
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

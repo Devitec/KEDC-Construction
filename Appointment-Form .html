@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment</title>
+  <!-- Bootstrap 5.3 css  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Appointment-Form.css">
+</head>
+
+<body>
+  <!-- Navbar  -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="assets/KEDC.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="About us.html">About us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="Projects - Finished.html">Finished</a></li>
+              <li><a class="dropdown-item" href="Projects - On Going.html">On Going</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="News & Updates.html">News & Updates</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button" 
+            data-bs-toggle="dropdown" aria-expanded="false">
+              Careers
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="Why work with us.html">Why Work With us</a></li>
+              <li><a class="dropdown-item" href="Be One of us.html">Be one of us</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-warning active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contact Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="Contact.html">Work With us</a></li>
+              <li><a class="dropdown-item" href="#">Set an Appointment</a></li>
+              <li><a class="dropdown-item" href="FAQ's.html">FAQs</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /End of Navbar  -->
+
+
+  <div class="container py-4 px-4">
+    <div class="row head-form">
+      <div class="container  py-2">
+        <main>
+          <section>
+            <div class="form-control px-3 py-3" id="my_form">
+              <div>
+                <h1 class="text-center Ah-input" style="size: 60px; padding-bottom:30px;">Select Your Appointment Type
+                </h1>
+              </div>
+              <div>
+                <div class="row">
+                  <h2 class=" A-input">Select Appointment Type </h2>
+                </div>
+                <select class="form-select col-12 select-input3" aria-label="Default select example"
+                  id="appointment-type">
+                  <option selected>--</option>
+                  <option value="Documents Submission">Documents Submission</option>
+                  <option value="Contract Signing"> Contract Signing </option>
+                </select>
+                <P>
+                  NOTES:
+                  <br>
+                  <br>
+                  1. Prior to your appointment schedule, please coordinate with your Account Officer for the list of
+                  documents to be submitted.
+                  <br>
+                  <br>
+                  2. Indicate in the Notes portion (Step 3) the Subdivision and Block/Lot of the reserved property.
+                  <br>
+                  <br>
+                  3. For payments, we highly encourage cash transactions through our online banking facilities or
+                  payment
+                  centers.
+                  Go to payment@kennedy.com.ph or email us at collections_info@kennedy.com.ph for payment concerns.
+                  <br>
+                  <br>
+                  4. For all other inquiries, you may send an email to info@kennedy.com.ph
+                </P>
+                <a href="Appointment-Form-1.html" class="text-decoration-none"><input type="submit" value="Next"
+                    class="sbtn1" id="nxtBtn"></a>
+              </div>
+          </section>
+
+        </main>
+      </div>
+
+      <script>
+      // save to local storage 
+      const form = document.getElementById('my_form')
+        const appointment = document.getElementById('appointment-type')
+        const nextBtn = document.getElementById('nxtBtn')
+
+        nextBtn.addEventListener('click', (e) => {
+          const appointmentValue = {
+            Appointment: appointment.value
+          }
+
+          if (appointmentValue.Appointment == "Documents Submission") {
+            alert("A document has been added ")
+            window.location.href = "Appointment-form-3.html"
+          } else if (appointmentValue.Appointment == "Contract Signing") {
+            alert("A Contract has been added  ")
+            window.location.href = "Appointment-form-3.html"
+          }
+
+          localStorage.setItem('Appointment-Type',appointmentValue.Appointment);
+
+        })
+
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

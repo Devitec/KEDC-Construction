@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment-Form</title>
+  <!-- Bootstrap 5.3 css  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Appointment-Form-3.css">
+</head>
+
+<body>
+  <!-- Navbar  -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="assets/KEDC.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="About us.html">About us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="Projects - Finished.html">Finished</a></li>
+              <li><a class="dropdown-item" href="Projects - On Going.html">On Going</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="News & Updates.html">News & Updates</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Careers
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="Why work with us.html">Why Work With us</a></li>
+              <li><a class="dropdown-item" href="Be One of us.html">Be one of us</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-warning active" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Contact Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="Contact.html">Work With us</a></li>
+              <li><a class="dropdown-item" href="#">Set an Appointment</a></li>
+              <li><a class="dropdown-item" href="FAQ's.html">FAQs</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /End of Navbar  -->
+  <div class="container Box-container py-4 px-4">
+    <div class="row">
+      <main>
+        <section>
+          <div class="form-control px-4 p-3" id="my_form">
+            <h2 class="text-center">Confirm Appointment </h2>
+            <div class="form-button-container py-3">
+              <div class=" content-row">
+                <div id="Appointment-details" class="col-sm-12 col-md-6">
+                  <h4 id="Appointment-Type"></h4>
+                  <p>
+                  <p id="Apppointment-Schedule"></p>
+                  </p>
+                </div>
+                <div id="Customer-details" class="col-sm-12 col-md-6">
+                  <h4 id="Compelete-Name "></h4>
+                  <p>
+                  <p id="phone">Phone</p>
+                  <p id="email">Email</p>
+                  <p id="address">Address</p>
+                  <p id="city">City</p>
+                  <p id="zip">Zip</p>
+                  </p>
+                  <div class=" content-row">
+
+                  </div>
+                </div>
+              </div>
+
+
+
+              <a href="Appointment-Form-2.html"><input type="submit" value="Back" class="sbtn1"></a>
+              <a href="#"><input type="submit" value="Confirm" class="sbtn1"></a>
+            </div>
+          </div>
+
+    </div>
+  </div>
+  </section>
+  </main>
+
+  <script>
+    const firstName = JSON.parse(localStorage.getItem('First-Name'));
+    const lastName = JSON.parse(localStorage.getItem('Last-Name'));
+    const Phone = JSON.parse(localStorage.getItem('Phone'));
+    const Email = JSON.parse(localStorage.getItem('Email'))
+    const Address = JSON.parse(localStorage.getItem('Address'));
+    const city = JSON.parse(localStorage.getItem('City'));
+    const zip = JSON.parse(localStorage.getItem('Zip'));
+    const appointment_type = localStorage.getItem('Appointment-Type');
+    const appointment_Date = localStorage.getItem('Time');
+    const appointment_Time = localStorage.getItem('Date');
+    const DateTime = appointment_Date + " "+ appointment_Time;
+
+    document.getElementById('Compelete-Name ').innerHTML = firstName + " " + lastName;
+    document.getElementById('phone').innerHTML = Phone;
+    document.getElementById('email').innerHTML = Email;
+    document.getElementById('address').innerHTML = Address;
+    document.getElementById('city').innerHTML = city;
+    document.getElementById('zip').innerHTML = zip;
+
+    document.getElementById('Apppointment-Schedule').innerHTML = DateTime;
+    document.getElementById('Appointment-Type').innerHTML = appointment_type;
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

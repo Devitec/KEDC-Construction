@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.home {
+    background-image: url(news&updates/header1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+    text-align: center;
+    text-shadow: 1px 1px #ffffff;
+    background-repeat: no-repeat;
+}
+nav a .kedc-logo {
+    width: 150px;
+}
+.slogan {
+    text-align: center;
+    padding-top: 17%;
+    padding-bottom: 17%;
+}
+.card{
+    margin: 5% 0%;
+}
+.card-body{
+    margin: 0% 0% 0% 3%;
+    padding: 6% 0%;
+}
+.bot{
+    padding: 15px 20px;
+    background-color: #ffffff;
+    color: #198754;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+.bot:hover{
+    background: #198754;
+    color: #ffffff;
+}
+.tagline {
+    padding: 5%;
+    font-family: Bahnschrift SemiBold;
+    font-size: 300%;
+}
+.inquire{
+    background: url(assets/background3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+  
+  

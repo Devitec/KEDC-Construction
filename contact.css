@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@500&family=Jost:ital@1&family=Montserrat&family=Mulish:ital,wght@1,300&family=Roboto+Slab:wght@400;500&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+body{
+  overflow-x: hidden;
+}
+
+header {
+  background-image: url(assets/wws.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slogan {
+  text-align: center;
+  padding-top: 23%;
+  padding-bottom: 23%;
+}
+
+.construct {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.my-form {
+background-color: rgb(242, 242, 242);
+}
+
+#Hero h1{
+  margin: 0 auto;
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 100px;
+  
+}
+.address h3{
+  margin: 0 auto;
+  font-size: 30px;
+  font-weight: 700;
+ 
+}
+.address{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.google-maps {
+  position: relative;
+}
+
+.google-maps iframe {
+  position: relative;
+  width: 90% !important;
+}
