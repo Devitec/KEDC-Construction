@@ -25,7 +25,8 @@
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img src="assets/KEDC.png"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -39,7 +40,8 @@
             <a class="nav-link text-white" href="About us.html">About us</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Projects
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -51,8 +53,8 @@
             <a class="nav-link text-white" href="News & Updates.html">News & Updates</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button" 
-            data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Careers
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -61,7 +63,8 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-warning active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-warning active" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Contact Us
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -80,51 +83,52 @@
       <div class="container  py-2">
         <main>
           <section>
-            
-              <div class="form-control px-3 p-3"id="my_form">
-                <div>
-                  <h1 class="text-center">Select Time and Date </h1>
-                </div>
-  
-                <div class="row">
-                  <div class="container">
-  
-  
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label>Select Date: </label>
-                        <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
-                          <span class="input-group-addon"><i class='bx bxs-calendar'></i></span>
-                          <input class="form-control" type="text" readonly id="pickerDateInput"/>
-  
-                        </div>
+
+            <div class="form-control px-3 p-3" id="my_form">
+              <div>
+                <h1 class="text-center">Select Time and Date </h1>
+              </div>
+
+              <div class="row">
+                <div class="container">
+
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Select Date: </label>
+                      <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+                        <span class="input-group-addon"><i class='bx bxs-calendar'></i></span>
+                        <input class="form-control" type="text" readonly id="pickerDateInput" />
+
                       </div>
-                      <div class="col-md-6">
-  
-  
-                        <label>Select Time:</label>
-                        <div id="timepicker" class="input-group date" data-time-format="12hrs">
-                          <span class="input-group-addon"><i class='bx bx-time-five'></i></span>
-                          <input type="text" class="time-pickable" id="pickerTimeInput" readonly></input>
-  
-                        </div>
-                      </div>
-  
-  
                     </div>
+                    <div class="col-md-6">
+
+
+                      <label>Select Time:</label>
+                      <div id="timepicker" class="input-group date" data-time-format="12hrs">
+                        <span class="input-group-addon"><i class='bx bx-time-five'></i></span>
+                        <input type="text" class="time-pickable" id="pickerTimeInput" readonly></input>
+
+                      </div>
+                    </div>
+
+
                   </div>
-  
-        
-  
-  
-                  <div class="form-button-container py-3">
-                    <a href="Appointment-Form .html"><input type="button" value="Back" class="sbtn1"></a>
-                    <a href="Appointment-form-3.html"><input type="submit" value="Next" class="sbtn1" id="submitSched"></a>
-                  </div>
+                </div>
+
+
+
+
+                <div class="form-button-container py-3">
+                  <a href="Appointment-Form .html"><input type="button" value="Back" class="sbtn1"></a>
+                  <a href="Appointment-Form-2.html"><input type="submit" value="Next" class="sbtn1"
+                      id="submitSched"></a>
                 </div>
               </div>
-            
-            
+            </div>
+
+
       </div>
 
 
@@ -328,14 +332,14 @@
         time: pickerTimeInput.value,
         date: pickerDateInput.value
       }
-      
+
       alert("Schedule has been saved!")
       localStorage.setItem('Time', schedule.time);
       localStorage.setItem('Date', schedule.date)
       // localStorage.setItem("schedule", JSON.stringify(schedule))
       window.location.href = "Appointment-form-2.html"
     })
-  
+
 
   </script>
 
